@@ -18,7 +18,7 @@ const LOGIN_BUTTON = {
 };
 
 function LoginForm() {
-  const { logined, setLogined } = useAuthContext();
+  const { setLogined } = useAuthContext();
 
   const usernameRef = useRef(null);
   const passwordRef = useRef(null);
