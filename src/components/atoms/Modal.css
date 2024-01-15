@@ -1,0 +1,51 @@
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 200px;
+  overflow: auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  &.show {
+    display: block;
+  }
+
+  .modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 8px 8px 16px;
+
+    &> h3 {
+      font-size: 16px;
+      font-weight: 500;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .modal-close-button {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      color: #000;
+      margin: 0;
+      padding: 8px;
+      border: none;
+      background: transparent;
+    }
+  }
+
+   .modal-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 8px 16px;
+   }
+}

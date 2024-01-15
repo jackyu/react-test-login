@@ -1,0 +1,15 @@
+.versions {
+  display: flex;
+
+  &> li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding: 8px;
+  }
+}

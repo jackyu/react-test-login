@@ -1,0 +1,29 @@
+.sidebar {
+  text-align: center;
+  float: left;
+  width: 15%;
+  min-width: 135px;
+  height: 100%;
+  border-right: 1px solid black;
+  /* box-shadow: 0 6px 0 0 rgba(0, 65, 143, 0.1); */
+  padding: 16px 8px;
+
+  .logo {
+    width: 48px;
+    height: 48px;
+    border: none;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 16px;
+
+    li {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+  }
+}

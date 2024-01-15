@@ -1,0 +1,1 @@
+export const LOGINED_DATA_KEY = '_leading_information_logined_data_';
