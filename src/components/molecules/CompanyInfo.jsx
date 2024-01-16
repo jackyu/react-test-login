@@ -2,6 +2,9 @@ import React, { memo } from 'react';
 
 import './CompanyInfo.css';
 
+/**
+ * 公司簡介
+ */
 function CompanyInfo() {
   return (
     <div className="company">

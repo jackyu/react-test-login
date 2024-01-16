@@ -3,6 +3,11 @@ import React, { useState, forwardRef, useImperativeHandle } from 'react';
 
 import './Modal.css';
 
+/**
+ * @param {string} title - 標題
+ * @param {number} offsetY - Modal 距離上方的偏移量，預設為 46px
+ * @returns {JSX.Element}
+ */
 const Modal = forwardRef(function Modal({ title = '標題', children, offsetY = 46 }, ref) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -10,6 +15,7 @@ const Modal = forwardRef(function Modal({ title = '標題', children, offsetY = 
     setIsOpen(false);
   }
 
+  // 透過 useImperativeHandle 可以讓父層透過 ref 操作子層的方法
   useImperativeHandle(ref, () => ({
     open: () => setIsOpen(true),
     close: () => setIsOpen(false),

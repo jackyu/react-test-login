@@ -1,15 +1,19 @@
-import React from 'react';
+import { memo } from 'react';
 import { useAuthContext } from '../../hooks/use-auth-context';
 import WebConfig from '../../configs/web.json';
 import CryptoJS from 'crypto-js';
 
 import './ProfileInfo.css';
 
+/**
+ * 登入資訊
+ */
 function ProfileInfo() {
   const { logined } = useAuthContext();
 
   let decryptedPassword = '';
 
+  // 解密密碼
   if (logined.password) {
     const bytes = CryptoJS.AES.decrypt(logined.password, WebConfig.SECRET_KEY);
     decryptedPassword = bytes.toString(CryptoJS.enc.Utf8);
@@ -23,4 +27,4 @@ function ProfileInfo() {
   )
 }
 
-export default ProfileInfo;
+export default memo(ProfileInfo);

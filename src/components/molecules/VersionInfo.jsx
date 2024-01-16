@@ -1,7 +1,10 @@
-import React from "react";
+import { memo } from "react";
 
 import './VersionInfo.css';
 
+/**
+ * 版號資訊
+ */
 function VersionInfo() {
   return (
     <ul className="versions">
@@ -10,4 +13,4 @@ function VersionInfo() {
   );
 }
 
-export default VersionInfo;
+export default memo(VersionInfo);

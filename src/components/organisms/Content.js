@@ -19,6 +19,10 @@ const LoadingMessage = () => {
   );
 }
 
+/**
+ * 右邊區塊
+ * 主要顯示公司資訊、登入表單、登入後的下拉選單
+ */
 function Content() {
   const { logined } = useAuthContext();
   const { router } = useRouterContext();

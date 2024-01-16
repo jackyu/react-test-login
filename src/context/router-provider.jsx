@@ -17,6 +17,3 @@ export default function RouterProvider({ page = Router.COMPANY, children }) {
 
   return <RouterContext.Provider value={value}>{children}</RouterContext.Provider>;
 }
-
-// 教學文:
-// https://medium.com/comsystoreply/how-to-use-react-context-with-usestate-c8ae4fe72fb9

@@ -8,6 +8,10 @@ import { useAuthContext } from '../../hooks/use-auth-context';
 
 import './Sidebar.css';
 
+/**
+ * 左邊區塊
+ * 主要顯示 首頁、登入、登出三個按鈕
+ */
 function Sidebar() {
   const { router, setRouter } = useRouterContext();
   const { logined, setLogined } = useAuthContext();

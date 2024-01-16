@@ -17,6 +17,9 @@ const LOGIN_BUTTON = {
   HEIGHT: 40,
 };
 
+/**
+ * 登入表單
+ */
 function LoginForm() {
   const { setLogined } = useAuthContext();
 
@@ -28,6 +31,7 @@ function LoginForm() {
   const login = (username, password) => {
     if (username === '' || password === '') return;
 
+    // 將密碼加密後儲存
     const loginData = {
       username,
       password: CryptoJS.AES.encrypt(password, WebConfig.SECRET_KEY).toString(),
@@ -42,6 +46,7 @@ function LoginForm() {
     const username = usernameRef?.current?.value || '';
     const password = passwordRef?.current?.value || '';
 
+    // 驗證帳號密碼是否符合格式
     const { result, validateMessage } = validateLoginData(username, password);
 
     if (result) {

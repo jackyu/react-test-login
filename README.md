@@ -10,7 +10,7 @@
 - 請使用 CSS
 - 請使用 Hook
 
-詳細需求請見 [REQUIREMENT](./REQUIRMENT.md) 內容
+詳細需求請見 [REQUIREMENT](./REQUIREMENT.md) 內容
 
 ## 設定
 

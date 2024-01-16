@@ -1,10 +1,18 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import Modal from '../atoms/Modal';
 import useClickOutside from "../../hooks/use-click-outside";
 
 import './SelectButton.css';
 
-function SelectButton({ name, width = 440, height = 44, onClick, children }) {
+/**
+ * 下拉選單
+ * @param {string} placeholder - 下拉選單提示文字
+ * @param {number} width - 下拉選單寬度
+ * @param {number} height - 下拉選單高度
+ * @param {function} onClick - 下拉選單點擊事件
+ * @param {React.ReactNode} children - 下拉選單內容
+ */
+function SelectButton({ placeholder, width = 440, height = 44, onClick, children }) {
   const selectRef = useRef(null);
   const modalRef = useRef(null);
 
@@ -32,7 +40,7 @@ function SelectButton({ name, width = 440, height = 44, onClick, children }) {
         }}
       >
         <div>
-          <span>{name}</span>
+          <span>{placeholder}</span>
           <span className="arrow">
             <svg
               aria-hidden="true"

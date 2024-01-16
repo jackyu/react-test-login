@@ -23,7 +23,7 @@ const tabsInfo = [
 function TabPanel() {
   return (
     <div className="container">
-      <SelectButton name="請選擇">
+      <SelectButton placeholder="請選擇">
         <Tab data={tabsInfo} />
       </SelectButton>
     </div>

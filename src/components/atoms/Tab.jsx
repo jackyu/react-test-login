@@ -16,6 +16,10 @@ const LoadingComponent = () => (
   </div>
 );
 
+/**
+ * @param {Tab[]} data - Tab，[{ id: string, name: string, component: React.ReactNode }] 資料
+ * @returns {JSX.Element}
+ */
 function Tab({ data }) {
   const [active, setActive] = useState(0);
 
