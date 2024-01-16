@@ -10,7 +10,7 @@
 - 請使用 CSS
 - 請使用 Hook
 
-詳細需求請見 [REQUIREMENT](./REQUIREMENT.md) 內容
+詳細需求請見 [REQUIREMENT](./REQUIRMENT.md) 內容
 
 ## 設定
 
@@ -44,5 +44,5 @@ pnpm start
 - [X] 登入成功的資訊需加密保存
 - [X] 未登入成功前，無法執行登出
 - [X] 下拉選單，參照 github 的版號下拉樣式設計
-- [] 版本號從 package.json 取得
-- [] 一鍵發佈至 github，更新版號
+- [-] 版本號從 package.json 取得
+- [-] 一鍵發佈至 github，更新版號
